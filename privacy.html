@@ -2,11 +2,116 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>myLiflow 개인정보처리방침</title>
-<meta http-equiv="refresh" content="0; url=https://prkim-devlog.notion.site/3f6adebc6e1280b39db0cfdb8fbdac6f">
-<link rel="canonical" href="https://prkim-devlog.notion.site/3f6adebc6e1280b39db0cfdb8fbdac6f">
+<style>
+  :root { --primary: #3166F5; --text: #0E1726; --muted: #5B6577; --bg: #F5F7FB; --line: #E9EDF3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.7 -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.02em; }
+  .date { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+  section { margin-top: 16px; padding: 20px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+  h2 { margin: 0 0 10px; font-size: 17px; }
+  p, ul { margin: 0 0 8px; }
+  ul { padding-left: 18px; }
+  .table { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 8px 6px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  a { color: var(--primary); font-weight: 600; text-decoration: none; }
+  footer { margin-top: 32px; font-size: 13px; color: var(--muted); }
+</style>
 </head>
 <body>
-<p><a href="https://prkim-devlog.notion.site/3f6adebc6e1280b39db0cfdb8fbdac6f">개인정보처리방침으로 이동</a></p>
+<main>
+  <h1>myLiflow 개인정보처리방침</h1>
+  <p class="date">시행일: 2026년 10월 11일</p>
+
+  <section>
+    <p>myLiflow(이하 “앱”)는 회원가입 없이 쓰는 앱입니다. 기록한 내용은 기본적으로 사용자의 기기에만 저장되며, 개발자는 이 내용을 볼 수 없습니다. 이 방침은 앱이 어떤 정보를 어디로 보내는지 설명합니다.</p>
+    <p>앱은 광고를 표시하지 않고, 유료 기능(인앱 결제·구독)을 판매하지 않으며, 다른 회사의 앱이나 웹사이트에 걸쳐 사용자를 추적하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>1. 기기에만 저장되는 정보</h2>
+    <p>다음 정보는 사용자의 기기에만 저장되며 개발자의 서버로 보내지 않습니다.</p>
+    <ul>
+      <li>기록과 일정 (무엇을, 언제 했는지)</li>
+      <li>대상 이름 (예: 나, 엄마, 반려동물 이름)</li>
+      <li>메모, 알림 설정</li>
+    </ul>
+    <p>알림은 기기에서 직접 예약되며 서버를 거치지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>2. iCloud 백업</h2>
+    <p>기기를 바꿔도 기록을 복원할 수 있도록, 기록을 사용자 본인의 iCloud 계정에 백업합니다. 백업 파일은 Apple의 iCloud에 저장되며 개발자는 접근할 수 없습니다. iOS 설정 › Apple 계정 › iCloud에서 확인하고 삭제할 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>3. 서버로 보내는 정보와 목적</h2>
+    <div class="table">
+      <table>
+        <tr><th>구분</th><th>보내는 정보</th><th>목적</th><th>보관</th></tr>
+        <tr><td>자동 분류</td><td>입력한 문장에서 날짜·대상 이름을 뺀 부분 (예: “스케일링”)</td><td>어떤 종류의 일인지(카테고리)와 주기를 추천</td><td>분류 후 저장하지 않음</td></tr>
+        <tr><td>개선 데이터</td><td>카테고리, 주기, 사용자가 직접 만든 분류 이름, 자동으로 분류하지 못한 문장, 분류 사전 버전</td><td>자동 분류 정확도 개선</td><td>서버 로그에 일시 보관</td></tr>
+        <tr><td>앱 인증</td><td>무작위로 만든 앱 식별 번호, Apple 기기 증명(App Attest) 결과</td><td>정상 앱인지 확인하고 하루 사용 한도를 지키기 위해</td><td>식별 번호 30일, 일별 사용 횟수는 당일</td></tr>
+        <tr><td>접속 정보</td><td>IP 주소 (복원할 수 없는 해시값으로만 저장)</td><td>비정상적인 대량 요청 차단</td><td>당일</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>개선 데이터에는 이름, 연락처, 기기 고유번호 등 사용자를 알아볼 수 있는 정보가 포함되지 않습니다. 기록한 날짜, 메모, 대상 이름도 보내지 않습니다.</li>
+      <li>자동으로 분류하지 못한 문장은 입력한 그대로 전송되므로, 문장에 다른 사람의 이름이나 연락처를 적지 않도록 권장합니다.</li>
+      <li>개선 데이터 전송은 앱의 설정 › 개인정보 › 개선 데이터 전송에서 언제든 끌 수 있습니다. 끄면 아직 보내지 않은 데이터도 함께 삭제됩니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. 처리 위탁 및 국외 이전</h2>
+    <p>서비스 운영을 위해 아래 업체에 처리를 맡기며, 정보는 해당 국가의 서버에서 처리됩니다. 정보는 앱을 사용할 때 인터넷을 통해 전송되며, 3번의 보관 기간이 지나면 삭제됩니다.</p>
+    <div class="table">
+      <table>
+        <tr><th>업체</th><th>국가</th><th>맡기는 일</th><th>이전되는 정보</th></tr>
+        <tr><td>Anthropic, PBC</td><td>미국</td><td>자동 분류 (Claude API)</td><td>3번의 자동 분류 문장</td></tr>
+        <tr><td>Fly.io, Inc.</td><td>일본 (도쿄 서버)</td><td>서버 운영 · 서버 로그</td><td>3번의 정보</td></tr>
+        <tr><td>Supabase, Inc.</td><td>일본 (도쿄 서버)</td><td>서버 데이터베이스</td><td>앱 식별 번호, 사용 횟수, IP 해시</td></tr>
+        <tr><td>Apple Inc.</td><td>미국</td><td>iCloud 백업, 기기 증명</td><td>백업 · 증명 정보</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. 이용자의 권리</h2>
+    <ul>
+      <li><b>기기 데이터 삭제:</b> 앱을 삭제하면 기기에 저장된 모든 기록이 삭제됩니다.</li>
+      <li><b>백업 삭제:</b> iCloud 백업은 iOS 설정에서 삭제할 수 있습니다.</li>
+      <li><b>개선 데이터:</b> 앱 설정에서 전송을 끌 수 있습니다.</li>
+      <li><b>서버 정보:</b> 서버에는 사용자를 알아볼 수 있는 정보가 저장되지 않아, 특정 사용자의 정보를 찾아 열람하거나 삭제하기 어렵습니다. 궁금한 점은 아래 연락처로 문의해 주세요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. 아동의 개인정보</h2>
+    <p>이 앱은 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>7. 안전성 확보 조치</h2>
+    <p>모든 전송은 HTTPS로 암호화하고, 서버는 서명된 토큰으로 요청을 확인하며, IP 주소는 해시로만 저장하고, 필요한 최소한의 정보만 보냅니다.</p>
+  </section>
+
+  <section>
+    <h2>8. 개인정보 보호책임자</h2>
+    <p>myLiflow 운영자 · <a href="mailto:myliflow@gmail.com">myliflow@gmail.com</a></p>
+  </section>
+
+  <section>
+    <h2>9. 방침의 변경</h2>
+    <p>이 방침이 바뀌면 시행 7일 전에 이 페이지에서 알립니다. 광고나 유료 기능을 도입하는 경우에도 시행 전에 이 방침을 먼저 고칩니다.</p>
+  </section>
+
+  <footer><a href="/">myLiflow</a> · © 2026 myLiflow</footer>
+</main>
 </body>
 </html>
